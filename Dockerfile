@@ -5,17 +5,15 @@ FROM python:3.12-slim-bullseye
 WORKDIR /app
 
 # Create a non-root user named 'myuser' with a home directory
-RUN useradd -m myuser
 
 # Copy the requirements.txt file to the container to install Python dependencies
 COPY requirements.txt ./
 
 # Install the Python packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN useradd -m myuser && pip install --no-cache-dir -r requirements.txt && \
+    mkdir logs qr_codes && chown myuser:myuser logs qr_codes
 # Before copying the application code, create the logs and qr_codes directories
 # and ensure they are owned by the non-root user
-RUN mkdir logs qr_codes && chown myuser:myuser logs qr_codes
 
 # Copy the rest of the application's source code into the container, setting ownership to 'myuser'
 COPY --chown=myuser:myuser . .
