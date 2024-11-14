@@ -228,47 +228,7 @@ Once you have successfully Dockerized your **QR Code Generator** application, yo
    ```bash
    docker tag qr-code-generator-app your-dockerhub-username/qr-code-generator-app
    ```
-
-3. **Push the Image to DockerHub**  
-   Push the tagged image to DockerHub:
-   ```bash
-   docker push your-dockerhub-username/qr-code-generator-app
-   ```
-   Your image is now available on DockerHub for others to pull and use.
-
 ---
-
-### **Step 4: Setting Up Continuous Integration with GitHub Actions**
-
-Integrating Continuous Integration (CI) ensures that your application is automatically tested and built whenever you push changes to your repository. GitHub Actions allows you to automate this process seamlessly.
-
-1. **Create a GitHub Actions Workflow File**  
-   In your project repository, create a new directory named `.github/workflows/` and inside it, create a file named `python-app.yml`.
-
-   **Explanation of Workflow Steps:**
-   - **actions/checkout@v2:** Checks out your repository code.
-   - **actions/setup-python@v2:** Sets up the specified Python version.
-   - **Install dependencies:** Installs Python dependencies and testing tools.
-   - **Run tests with coverage:** Executes unit tests and measures coverage, generating a coverage report.
-   - **Build Docker image:** Builds the Docker image for your application.
-   - **docker/login-action@v2:** Logs in to DockerHub using secrets stored in GitHub.
-   - **Push Docker image:** Pushes the Docker image to DockerHub.
-   - **Check coverage:** Ensures that test coverage meets the required threshold (100%).
-
-3. **Set Up DockerHub Credentials in GitHub Secrets**  
-   To securely pass your DockerHub credentials to GitHub Actions:
-   - Go to your GitHub repository.
-   - Click on **Settings** > **Secrets and variables** > **Actions** > **New repository secret**.
-   - Add the following secrets:
-     - **DOCKER_USERNAME:** Your DockerHub username.
-     - **DOCKER_PASSWORD:** Your DockerHub password or access token.
-
-4. **Commit and Push the Workflow File**  
-   Add, commit, and push the workflow file to your repository:
-   ```bash
-   git add .github/workflows/python-app.yml
-   git commit -m "Add GitHub Actions workflow for CI and Docker build"
-   git push origin main
 
 ## **Submit**
 
@@ -277,9 +237,8 @@ Integrating Continuous Integration (CI) ensures that your application is automat
 
 **Submission Instructions:**  
 1. **Dockerize the QR Code Generator Program:** Follow the steps outlined in this module to Dockerize the provided **QR Code Generator** application.
-2. **Push Docker Image to DockerHub:** Ensure your Docker image is pushed to DockerHub. Submit the link to your DockerHub image (e.g., `https://hub.docker.com/r/your-dockerhub-username/qr-code-generator-app`).
-3. **Provide GitHub Repository Link:** Submit the link to your GitHub repository containing the Dockerfile, application code, and GitHub Actions workflow.
-4. **Include Screenshots:**
+2. **Provide GitHub Repository Link:** Submit the link to your GitHub repository containing the Dockerfile, application code, and GitHub Actions workflow.
+3. **Include Screenshots:**
    - **Container Logs:** Provide a screenshot showing the container logs that confirm your application is running successfully inside the container.
    - **GitHub Actions Workflow:** Include a screenshot of a successful GitHub Actions run, demonstrating automated testing and Docker image building.
 
