@@ -18,10 +18,7 @@ Docker is an essential tool in modern software development, particularly in clou
 
 By the end of this module, you will be able to:
 
-1. **Apply containerization techniques to containerize applications using Docker.**
-2. **Containerize and manage Python applications using Docker, including Dockerfile creation, environment variables, and volume management.**
-3. **Utilize Git for version control and collaborative development.**
-5. **Implement comprehensive logging strategies to monitor and debug applications.**
+- CLO 9: Apply containerization techniques to containerize applications using Docker
 
 ---
 
