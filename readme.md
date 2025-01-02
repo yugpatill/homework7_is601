@@ -245,7 +245,107 @@ Once you have successfully Dockerized your **QR Code Generator** application, yo
 - **Screenshots:**
   - *Container Logs:* [Upload Image]
   - *GitHub Actions Workflow:* [Upload Image]
+# **Hands-On Assignment**
 
+## **Dockerize the QR Code Generator Application**
+
+### **Assignment Overview**
+
+In this hands-on assignment, you will apply the concepts learned in **Module 7: Docker and Containerization** by Dockerizing the provided **QR Code Generator** application. This exercise will help you understand the practical aspects of containerization, including writing Dockerfiles, managing Docker containers, and implementing Continuous Integration (CI) with GitHub Actions.
+
+### **Assignment Objectives**
+
+- **Containerize** the QR Code Generator application using Docker.
+- **Manage** environment variables and volume mounts within Docker.
+- **Utilize Git** for version control throughout the Dockerization process.
+- **Set Up CI/CD** pipelines using GitHub Actions to automate testing and Docker image builds.
+- **Demonstrate** your understanding through documentation and reflective analysis.
+
+### **Submission Requirements**
+
+1. **Dockerize the Application:**
+   - Follow the **Step-by-Step Guide** provided in the module to create a `Dockerfile` for the QR Code Generator.
+   - Build and run the Docker container to ensure the application operates correctly within the containerized environment.
+
+2. **Version Control with Git:**
+   - Initialize a Git repository for your project.
+   - Commit all relevant files, including the `Dockerfile`, application code, and `requirements.txt`.
+   - Push your repository to GitHub.
+
+3. **Continuous Integration with GitHub Actions:**
+   - Set up a GitHub Actions workflow that automates the testing of your application and builds the Docker image upon each commit.
+   - Ensure that the workflow runs successfully, indicating automated tests pass and the Docker image is built without errors.
+
+4. **DockerHub Integration:**
+   - Tag and push your Docker image to DockerHub.
+   - Ensure your DockerHub repository is public or accessible as required.
+
+5. **Documentation and Screenshots:**
+   - **GitHub Repository Link:** Provide the URL to your GitHub repository containing all project files.
+   - **DockerHub Image Link:** Provide the URL to your DockerHub repository with the pushed Docker image.
+   - **Screenshots:**
+     - *Container Logs:* Include a screenshot showing the Docker container logs to confirm the application is running successfully.
+     - *GitHub Actions Workflow:* Include a screenshot of a successful GitHub Actions run, demonstrating automated testing and Docker image building.
+
+6. **Reflection:**
+   - Write a brief reflection (200-300 words) addressing your experience Dockerizing the application, challenges faced, and how you overcame them.
+
+### **Example Submission Structure**
+
+- **GitHub Repository:** [https://github.com/your-username/qr-code-generator](https://github.com/your-username/qr-code-generator)
+- **DockerHub Image:** [https://hub.docker.com/r/your-dockerhub-username/qr-code-generator-app](https://hub.docker.com/r/your-dockerhub-username/qr-code-generator-app)
+- **Screenshots:**
+  - *Container Logs:* ![Container Logs](path-to-your-screenshot)
+  - *GitHub Actions Workflow:* ![GitHub Actions](path-to-your-screenshot)
+- **Reflection Document:** Included in the repository’s README or as a separate file (`Reflection_Module7.pdf`).
+
+### **Submission Instructions**
+
+Submit the following by the **[Insert Deadline Here]**:
+
+1. **GitHub Repository Link**
+2. **DockerHub Image Link**
+3. **Screenshots** as specified above
+4. **Reflection Document**
+
+Ensure all links are accessible and that your DockerHub repository contains the latest Docker image. Late submissions may be subject to grade penalties as per the course policy.
+
+---
+
+# **Grading Expectations**
+
+Your submissions for the **Hands-On Assignment** will be evaluated based on the following two criteria:
+
+### **1. Submission Completeness (50 Points)**
+
+- **GitHub Repository Link (15 Points):**
+  - Provided and accessible.
+  - Contains all necessary files (`Dockerfile`, application code, `requirements.txt`, GitHub Actions workflow).
+
+- **DockerHub Image Link (15 Points):**
+  - Provided and accessible.
+  - Docker image is correctly tagged and pushed to DockerHub.
+
+- **Screenshots (10 Points):**
+  - **Container Logs:** Screenshot shows the Docker container running successfully.
+  - **GitHub Actions Workflow:** Screenshot shows a successful run of the GitHub Actions workflow.
+
+- **Reflection Document (10 Points):**
+  - Submitted and addresses key experiences and challenges faced during Dockerization.
+
+### **2. Functionality of Dockerized Application (50 Points)**
+
+- **Docker Image Builds Successfully (25 Points):**
+  - The Dockerfile is correctly written.
+  - No build errors occur when creating the Docker image.
+
+- **Container Runs Correctly (25 Points):**
+  - The application operates as expected within the Docker container.
+  - Environment variables and volume mounts are properly configured.
+
+---
+
+**Good luck with your assignment!**
 ---
 
 ## **Reflect**
